@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>roadcrypto A-Frame test</title>
+    <meta name="description" content="A-Frame test">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    
+    <a-scene>
+      
+      
+      <!-- 10x10 ground, relative to the center -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#674A15" shadow></a-plane>
+      
+      
+      <!-- a cube is 1x1, offset by 1/2 -->
+      <a-box position="-4.5 0.5 -4.5" rotation="0 0 0" color="#0A4C04" shadow></a-box>
+           
+      
+      <a-box position="4.5 0.5 -4.5" rotation="0 0 0" color="#0A4C04" shadow></a-box> <!-- top left corner -->
+      <a-box position="-4.5 0.5 4.5" rotation="0 0 0" color="#0A4C04" shadow></a-box> <!-- bottom left -->
+      <a-box position="4.5 0.5 4.5" rotation="0 0 0" color="#0A4C04" shadow></a-box> <!-- bottom right corner -->
+      
+      
+<!--
+
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+      
+-->     
+      
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+    
+    
+    
+  </body>
+</html>
